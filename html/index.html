@@ -2,75 +2,364 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-  <title>부평구 통합주차시스템</title>
-  <link rel="stylesheet" href="../common/css/default.css">
-  <link rel="stylesheet" href="../common/css/slick.css" />
-  <script src="../common/js/jquery-3.6.0.min.js"></script>
-  <script src="../common/js/common.js"></script>
-  <script src="../common/js/slick.js"></script>
-  <script>
-  </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>부평구 통합주차시스템</title>
+    <link rel="stylesheet" href="../common/css/default.css">
+    <link rel="stylesheet" href="../common/css/slick.css" />
+    <link rel="stylesheet" href="../common/css/swiper-bundle.min.css">
+    <script src="../common/js/jquery-3.6.0.min.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/slick.js"></script>
+    <script src="../common/js/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-  <div class="wrapper">
-    <!-- skip navi -->
-    <div class="skip_navi">
-      <strong class="hide">바로가기 메뉴</strong>
-      <a href="#contents">본문 바로가기</a>
-      <a href="#gnb">주메뉴 바로가기</a>
-    </div>
-    <!-- / skip navi -->
-    <!-- header -->
-    <header>
-        <div class="container">
-            <div class="header_upper">
-                <ul></ul>
-                <ul></ul>
-            </div>
-            <div class="header_main">
-                <h1></h1>
-                <nav class="navwrap">
-                    <ul class="gnb">
+    <div class="wrapper">
+        <!-- skip navi -->
+        <div class="skip_navi">
+            <strong class="hide">바로가기 메뉴</strong>
+            <a href="#contents">본문 바로가기</a>
+            <a href="#gnb">주메뉴 바로가기</a>
+        </div>
+        <!-- / skip navi -->
+        <!-- header -->
+        <header>
+            <div class="container">
+                <div class="header_upper">
+                    <ul class="ul_l">
                         <li>
-                            
-                            <ul class="lnb"></ul>
+                            <a href="">
+                                부평구도시관리공단
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                온라인예약
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                통합주차
+                            </a>
                         </li>
                     </ul>
-                </nav>
+                    <ul class="ul_r">
+                        <!-- 로그인하면 숨김 -->
+                        <li>
+                            <a href="">
+                                로그인
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                회원가입
+                            </a>
+                        </li>
+                        <!-- / 로그인하면 숨김 -->
+                        <li>
+                            <a href="">
+                                사이트맵
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_main">
+                    <div class="logowrap">
+                        <a href=""><span class="hide">부평구시설관리공단통합주차</span></a>
+                    </div>
+                    <nav class="gnbwrap">
+                        <ul class="gnb">
+                            <li class="dep_1">
+                                <a href="">주차사업팀소개</a>
+                                <div class="lnbwrap">
+                                    <ul class="lnb"></ul>
+                                </div>
+                            </li>
+                            <li class="dep_1">
+                                <a href="">거주자우선주차</a>
+                                <div class="lnbwrap">
+                                    <ul class="lnb"></ul>
+                                </div>
+                            </li>
+                            <li class="dep_1">
+                                <a href="">공영주차</a>
+                                <div class="lnbwrap">
+                                    <ul class="lnb"></ul>
+                                </div>
+                            </li>
+                            <li class="dep_1">
+                                <a href="">견인보관소</a>
+                                <div class="lnbwrap">
+                                    <ul class="lnb"></ul>
+                                </div>
+                            </li>
+                            <li class="dep_1">
+                                <a href="">고객의소리 </a>
+                                <div class="lnbwrap">
+                                    <ul class="lnb"></ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-    </header>
-    <!-- / header -->
-    <!-- contents -->
-    <div class="contentswrap">
-        <div class="main_visual">
-            <!-- swiper -->
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-        <section class="notice">
+        </header>
+        <!-- / header -->
+        <!-- contents -->
+        <div class="contentswrap">
+            <div class="main_visualwrap">
+                <div class="swiper main_visual">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide main_visual_01"><span class="hide">메인비쥬얼1</span></div>
+                        <div class="swiper-slide main_visual_02"><span class="hide">메인비쥬얼2</span></div>
+                        <div class="swiper-slide main_visual_03"><span class="hide">메인비쥬얼3</span></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <section class="notice">
+                <div class="container">
+                    <h2 class="main_tit">공지사항</h2>
+                    <div class="swiper noticeslide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide notice_list">
+                                <a href="">
+                                    <p class="notice_num">No.1</p>
+                                    <p class="notice_tit">
+                                        부평구 거주자 주차 미사용구획미사용구획미사용구획미사용구획미사용구획미사용구획미사용구획미사용구획미사용구획미사용구획미사용구획미사용구획미사용구획미사용구획미사용구획미사용구획 안내(2022.11.19. 기준)
+                                    </p>
+                                    <span>2022-11-30</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide notice_list">
+                                <a href="">
+                                    <p class="notice_num">No.2</p>
+                                    <p class="notice_tit">
+                                        부평구 거주자 주차 미사용구획 안내(2022.11.19. 기준)
+                                    </p>
+                                    <span>2022-11-30</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide notice_list">
+                                <a href="">
+                                    <p class="notice_num">No.3</p>
+                                    <p class="notice_tit">
+                                        부평구 거주자 주차 미사용구획 안내(2022.11.19. 기준)
+                                    </p>
+                                    <span>2022-11-30</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide notice_list">
+                                <a href="">
+                                    <p class="notice_num">No.4</p>
+                                    <p class="notice_tit">
+                                        부평구 거주자 주차 미사용구획 안내(2022.11.19. 기준)
+                                    </p>
+                                    <span>2022-11-30</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next2"></div>
+                        <div class="swiper-button-prev2"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts_l">
+                        <h2 class="main_tit">시설별 연락처</h2>
+                    </div>
+                    <ul class="contacts_r">
+                        <li>
+                            <a href="">
+                                주차사업팀소개
+                                <span>032-<em>262-9223</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                거주자우선주차
+                                <span>032-<em>262-9233</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                견인차량문의
+                                <span>1566-<em>8578</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                공영주차문의
+                                <span>032-<em>262-9234</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                차량견인보관소
+                                <span>032-<em>262-9233~9236</em></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                FAX
+                                <span>032-<em>532-8851</em></span>
+                            </a>
+                        </li>
+                    </ul>
 
-        </section>
-        <section class="contacts">
-
-        </section>
-        <section class="services"></section>
+                </div>
+            </section>
+            <section class="services">
+                <div class="container">
+                    <div class="services_l">
+                        <h2 class="main_tit">거주자 서비스</h2>
+                        <ul class="serv_list">
+                            <li><a href="">
+                                <dl>
+                                    <dt>
+                                        <img src="../common/images/main_icn_faq.png" alt="FAQ 아이콘">
+                                    </dt>
+                                    <dd>FAQ</dd>
+                                </dl>
+                            </a></li>
+                            <li><a href="">
+                                <dl>
+                                    <dt>
+                                        <img src="../common/images/main_icn_files.png" alt="자료실 아이콘">
+                                    </dt>
+                                    <dd>자료실</dd>
+                                </dl>
+                            </a></li>
+                            <li><a href="">
+                                <dl>
+                                    <dt>
+                                        <img src="../common/images/main_icn_customer.png" alt="고객의소리 아이콘">
+                                    </dt>
+                                    <dd>고객의소리</dd>
+                                </dl>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="services_m">
+                        <dl>
+                            <dt>구획지도 검색</dt>
+                            <dd>희망하는 구획은 선택하신 후<br />편리하게 신청하세요</dd>
+                        </dl>
+                        <button>바로가기</button>
+                    </div>
+                    <div class="services_r">
+                        <div>
+                            나의 주차정보
+                            <img src="" alt="">
+                            <button></button>
+                        </div>
+                        <div>
+                            환불신청안내
+                            <img src="" alt="">
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- / contents -->
+        <!-- footer -->
+        <footer>
+                <div class="footer_upper">
+                    <div class="container">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    개인정보처리방침
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    회원약관
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    이메일추출방지정책
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    오시는길
+                                </a>
+                            </li>
+                        </ul>
+                        <div>
+                            <label for="rel_sites" class="hide"></label>
+                            <select name="" id="rel_sites">
+                                <option value="0" selected>관련기관사이트</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_main">
+                    <div class="container">
+                        <address>
+                            <p>
+                                공단주소 : 21387 인천광역시 부평구 경원대로 1337 부평구 견인차량보관소(부원중학교 앞)<br />
+                                대표전화 : 032-262-9233&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                팩스번호 : 032-528-8851<br />
+                                Copyright ⓒ INCHEON BUPYEEONG. All Right Reserved.
+                            </p>
+                        </address></div>
+                </div>
+        </footer>
+        <!-- / footer -->
     </div>
-    <!-- / contents -->
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="footer_upper"></div>
-            <div class="footer_main"></div>
-        </div>
-    </footer>
-    <!-- / footer -->
-  </div>
 </body>
+<script>
+    var swiper = new Swiper(".main_visual", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    var swiper2 = new Swiper(".noticeslide", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next2",
+            prevEl: ".swiper-button-prev2",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+    });
+</script>
 
 </html>
