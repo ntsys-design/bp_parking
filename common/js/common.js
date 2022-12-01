@@ -900,6 +900,13 @@ $(document).ready(function(){
       });
     };
 
+  /* m_menu */
+  $('.m_btn').click(function(){
+    $('.m_menu').toggleClass('on');
+    $('.header_main').toggleClass('m_opened');
+
+  })
+
 })
 
       
