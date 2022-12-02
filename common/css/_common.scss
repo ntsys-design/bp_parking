@@ -1,9 +1,10 @@
-#wrap {
+
+.wrapper {
   min-height: 100vh;
 }
 
 //공통 스타일
-*,a {
+*, a {
   font-family: $ff-nsnb;
   font-weight: bold;
   font-size: 15px;
