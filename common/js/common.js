@@ -920,33 +920,73 @@ $(document).ready(function(){
       $(this).siblings().stop().slideDown();
     }
   });
+      
+  function fulUp() {
+    $('.show_more.pink').removeClass('on')
+    $('.fu_l li:nth-child(2)').slideUp();
+    $('.fu_l li:nth-child(3)').slideUp();
+    $('.fu_l li:nth-child(4)').slideUp();
+  }
 
   $('.fu_l li:first-child').first().addClass('on');
   $('.show_more.pink').click (function(){
     if($(this).hasClass('on')){
-      $(this).removeClass('on')
-      $('.fu_l li:nth-child(2)').slideUp();
-      $('.fu_l li:nth-child(3)').slideUp();
-      $('.fu_l li:nth-child(4)').slideUp();
+
+      fulUp();
+      
     }else {
       $('.fu_l li').slideDown();
       $(this).addClass('on');
     }
   });
 
+  $(window).resize(function(){
+    if($(window).width() > 768) {
+      $('.fu_l li:nth-child(2)').show();
+      $('.fu_l li:nth-child(3)').show();
+      $('.fu_l li:nth-child(4)').show();
+      $('.show_more.pink').removeClass('on');
+    }else {
+      $('.fu_l li:nth-child(2)').hide();
+      $('.fu_l li:nth-child(3)').hide();
+      $('.fu_l li:nth-child(4)').hide();
+      $('.show_more.pink').removeClass('on');
+
+    }
+  });
+
+  function furUp(){
+    $('.show_more.gray').removeClass('on')
+    $('.fu_r li:nth-child(2)').slideUp();
+    $('.fu_r li:nth-child(3)').slideUp();
+    $('.fu_r li:nth-child(4)').slideUp();
+  }
+
   $('.fu_r li:first-child').first().addClass('on');
   $('.show_more.gray').click (function(){
+    
+    fulUp();
+
     if($(this).hasClass('on')){
-      $(this).removeClass('on')
-      $('.fu_r li:nth-child(2)').slideUp();
-      $('.fu_r li:nth-child(3)').slideUp();
-      $('.fu_r li:nth-child(4)').slideUp();
+
+      furUp();
+      
     }else {
       $('.fu_r li').slideDown();
       $(this).addClass('on');
     }
   });
+    
+  
 
+  $(window).resize(function(){
+    if($(window).width() > 0) {
+      $('.fu_r li:nth-child(2)').hide();
+      $('.fu_r li:nth-child(3)').hide();
+      $('.fu_r li:nth-child(4)').hide();
+      $('.show_more.gray').removeClass('on');
+    }
+  });
 })
 
       

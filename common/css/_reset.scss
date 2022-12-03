@@ -88,6 +88,10 @@ $header-height: 85px;
 //mixin
 
 /*flexbox*/
+@mixin flexr {
+  display: flex;
+  flex-direction: row;
+}
 @mixin flexc {
   display: flex;
   flex-direction: column;
